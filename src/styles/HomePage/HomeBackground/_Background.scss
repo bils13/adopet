@@ -1,0 +1,31 @@
+.background_home {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: $blue;
+    background-image: url('../img/forma1.svg'), url('../img/Forma2.svg');
+    background-repeat: no-repeat;
+    background-position: top left -10px, top 20vh right -30px;
+    background-size: 335px 275px, 85px 415px;
+}
+
+@media only screen and (min-width: 768px) {
+    .background_home {
+        background-position: top left -10px, top 20vh right;
+        background-size: 530px 434px, 134px 664px;
+   }
+}
+
+@media only screen and (min-width: 1440px) {
+    .background_home {
+         background-position: top left -50px, top 40px right;
+         background-size: 530px 434px, 134px 664px;
+    }
+}
+
+@media only screen and (max-height: 740px) {
+    .background_home {
+        background-position: top -40px left -10px, top 20vh right -30px;
+        background-size: 280px 275px, 85px 415px;
+   }
+}

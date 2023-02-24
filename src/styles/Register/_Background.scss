@@ -1,0 +1,33 @@
+.background_register {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    background-image: url('../img/Patas.svg'), url('../img/forma1.svg'), url('../img/Forma3.svg');
+    background-repeat: no-repeat;
+    background-position: top right, top left -10px, top 270px left -10px;
+    background-size: 190px 243px, 335px 275px, 85px 415px;
+}
+
+@media only screen and (min-width: 768px) {
+    .background_register {
+        background-image: url('../img/Patas.svg'), url('../img/forma1.svg'), url('../img/Forma2.svg');
+        background-position: top right, top left -10px, top 20vh right;
+        background-size: 292px 375px, 530px 434px, 134px 664px;
+   }
+}
+
+@media only screen and (min-width: 1440px) {
+    .background_register {
+        background-image: url('../img/Patas.svg'), url('../img/forma1.svg'), url('../img/Forma2.svg');
+         background-position: top right, top left -50px, top 40px right;
+         background-size: 317px 408px, 530px 434px, 134px 664px;
+    }
+ }
+
+@media only screen and (max-height: 740px) {
+    .background_register {
+        background-position: top right, top -40px left -10px, top 220px left -10px;
+        background-size: 130px 170px, 280px 275px, 70px 415px;
+    }
+}

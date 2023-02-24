@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header__icons {
+  margin-top: 48px;
+  margin-left: 46px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.header__icons .logo {
+  display: none;
+}
+.header__icons img {
+  margin-right: 58px;
+}
+
+@media only screen and (min-width: 768px) {
+  .header__icons {
+    margin-top: 20px;
+  }
+  .header__icons .logo {
+    display: inline;
+    width: 100px;
+    height: 100px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .header__icons {
+    margin-left: 100px;
+  }
+}
+@media only screen and (max-height: 740px) {
+  .header__icons {
+    margin-top: 23px;
+  }
+}
+.background_home {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: #3772FF;
+  background-image: url("../img/forma1.svg"), url("../img/Forma2.svg");
+  background-repeat: no-repeat;
+  background-position: top left -10px, top 20vh right -30px;
+  background-size: 335px 275px, 85px 415px;
+}
+
+@media only screen and (min-width: 768px) {
+  .background_home {
+    background-position: top left -10px, top 20vh right;
+    background-size: 530px 434px, 134px 664px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .background_home {
+    background-position: top left -50px, top 40px right;
+    background-size: 530px 434px, 134px 664px;
+  }
+}
+@media only screen and (max-height: 740px) {
+  .background_home {
+    background-position: top -40px left -10px, top 20vh right -30px;
+    background-size: 280px 275px, 85px 415px;
+  }
+}
+.background_register {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  background-image: url("../img/Patas.svg"), url("../img/forma1.svg"), url("../img/Forma3.svg");
+  background-repeat: no-repeat;
+  background-position: top right, top left -10px, top 270px left -10px;
+  background-size: 190px 243px, 335px 275px, 85px 415px;
+}
+
+@media only screen and (min-width: 768px) {
+  .background_register {
+    background-image: url("../img/Patas.svg"), url("../img/forma1.svg"), url("../img/Forma2.svg");
+    background-position: top right, top left -10px, top 20vh right;
+    background-size: 292px 375px, 530px 434px, 134px 664px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .background_register {
+    background-image: url("../img/Patas.svg"), url("../img/forma1.svg"), url("../img/Forma2.svg");
+    background-position: top right, top left -50px, top 40px right;
+    background-size: 317px 408px, 530px 434px, 134px 664px;
+  }
+}
+@media only screen and (max-height: 740px) {
+  .background_register {
+    background-position: top right, top -40px left -10px, top 220px left -10px;
+    background-size: 130px 170px, 280px 275px, 70px 415px;
+  }
+}
+.main {
+  margin-top: 99px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main img {
+  height: 46px;
+  width: 187px;
+  margin-bottom: 24px;
+}
+.main h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.main p {
+  text-align: center;
+  width: 248px;
+  height: 72px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+.ilustration img {
+  width: 247px;
+  height: 250px;
+  position: absolute;
+  left: 15%;
+  bottom: 80px;
+}
+
+@media only screen and (min-width: 768px) {
+  .main h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: #fff;
+  }
+  .main p {
+    width: 344px;
+    height: 78px;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+  }
+  .ilustration img {
+    width: 338px;
+    height: 380px;
+    left: 25%;
+    bottom: 70px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .main {
+    margin-top: -20px;
+  }
+  .main p {
+    width: 488px;
+    height: 52px;
+  }
+  .ilustration img {
+    width: 338px;
+    height: 300px;
+    left: 38%;
+    bottom: 30px;
+  }
+}
+@media only screen and (max-height: 740px) {
+  .main {
+    margin-top: 50px;
+  }
+  .ilustration img {
+    height: 200px;
+    bottom: 20px;
+  }
+}
+.register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 80px;
+}
+.register img {
+  width: 143px;
+  height: 35px;
+  margin-bottom: 31px;
+}
+.register__text {
+  width: 312px;
+  height: 71px;
+}
+.register__text h2, .register__text h3 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #3772FF;
+}
+.register__text h3 {
+  margin-bottom: 37px;
+}
+.register__label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.register__label label {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #737380;
+  margin-bottom: 4px;
+}
+.register__label input {
+  padding: 7px 0;
+  width: 370px;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #737380;
+  text-align: center;
+  background-color: #F7F7F7;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  outline: 0;
+  margin-bottom: 20px;
+}
+.register__label .invalidPassword {
+  margin-top: -10px;
+  margin-bottom: 5px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ff4444;
+}
+.register__button {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #FFFFFF;
+  background-color: #FC7071;
+  padding: 8px 32px;
+  border: none;
+  border-radius: 6px;
+}
+.register__button:hover {
+  background-color: #FF9D9E;
+  cursor: pointer;
+}
+
+@media only screen and (max-height: 740px) {
+  .register {
+    margin-top: 10px;
+  }
+  .register img {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .register__text h3 {
+    margin-bottom: 20px;
+  }
+  .register__label input {
+    width: 320px;
+  }
+}
+@media only screen and (min-width: 740px) {
+  .register img {
+    margin-top: 10px;
+    width: 250px;
+    height: 62px;
+  }
+  .register__text {
+    width: 525px;
+    height: 78px;
+  }
+  .register__text h2, .register__text h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #3772FF;
+  }
+  .register__label {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #737380;
+  }
+  .register__label input {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #737380;
+    margin-bottom: 24px;
+  }
+  .register__button {
+    margin-top: 16px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .register {
+    margin-top: 1px;
+  }
+  .register img {
+    margin-top: 1px;
+  }
+  .register__text {
+    width: 552px;
+    height: 78px;
+  }
+  .register__label {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #737380;
+  }
+  .register__label :nth-child(2), .register__label :nth-child(4) {
+    width: 525px;
+  }
+}
+.button {
+  margin-bottom: 16px;
+  background-color: #FC7071;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  width: 180px;
+  padding: 8px 0;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
+}
+.button:hover {
+  background-color: #FF9D9E;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .button {
+    width: 344px;
+    padding: 12px 0;
+  }
+}
+.footer {
+  background-color: #36D6AD;
+  position: absolute;
+  bottom: 0%;
+  width: 100vw;
+  height: 104px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer p {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+
+@media only screen and (min-width: 1280px) {
+  .footer {
+    height: 50px;
+  }
+}
+@media only screen and (max-height: 740px) {
+  .footer {
+    height: 40px;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,25 @@
+.footer {
+    background-color: $green;
+    position: absolute;
+    bottom: 0%;
+    width: 100vw;
+    height: 104px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+        @include text(16px, 400, #fff)
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .footer {
+        height: 50px;
+    }
+}
+
+@media only screen and (max-height: 740px) { //config especial para telas pequenas
+    .footer {
+        height: 40px;
+    }
+}

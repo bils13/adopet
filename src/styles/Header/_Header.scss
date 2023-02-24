@@ -1,0 +1,44 @@
+.header {
+    &__icons {
+        margin-top: 48px;
+        margin-left: 46px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .logo {
+            display: none;
+        }
+        img {
+            margin-right: 58px;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .header {
+        &__icons {
+            margin-top: 20px;
+            .logo {
+                display: inline;
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .header {
+        &__icons {
+            margin-left: 100px;
+        }
+    }
+}
+
+@media only screen and (max-height: 740px) {
+    .header {
+        &__icons {
+            margin-top: 23px;
+        }
+    }
+}
