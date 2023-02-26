@@ -30,21 +30,16 @@
             margin-bottom: 4px;
         }
         input {
-            padding: 7px 0;
-            width: 370px;
-            border: none;
+            @include input(370px);
             @include text(12px, 400, $grey);
-            text-align: center;
-            background-color: #F7F7F7;
-            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
-            border-radius: 6px;
-            outline: 0;
-            margin-bottom: 20px;
         }
         .invalidPassword {
             margin-top: -10px;
             margin-bottom: 5px;
             @include text(16px, 600, #ff4444)
+        }
+        .border-red {
+            border: 1px solid #ff4444;
         }
     }
     &__button {
@@ -59,7 +54,6 @@
         }
     }
 }
-
 
 @media only screen and (max-height: 740px) {
     .register {

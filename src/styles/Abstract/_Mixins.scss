@@ -4,3 +4,15 @@
         font-weight: $weight;
         color: $color;
 }
+
+@mixin input($width) {
+        padding: 7px 0;
+        width: $width;
+        border: none;
+        text-align: center;
+        background-color: #F7F7F7;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+        border-radius: 6px;
+        outline: 0;
+        margin-bottom: 20px;
+}

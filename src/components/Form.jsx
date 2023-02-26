@@ -45,9 +45,9 @@ export default () => {
                 {!state.matches && (<InputText type='email' name='email' register={register} required='required: true' placeholder='Escolha o seu melhor e-mail'/>) }
 
                 <label>Senha</label>
-                <InputText type='password' name='password' register={register} required='required: true' placeholder='Crie uma senha'/>
+                <InputText type='password' name='password' register={register} required='required: true' placeholder='Crie uma senha' classe={errors.passwordC ? 'border-red' : ''}/>
                 <label>Confirme sua senha</label>
-                <InputText type='password' name='passwordC' register={register} required='required: true' placeholder='Repita a senha criada acima'/>
+                <InputText type='password' name='passwordC' register={register} required='required: true' placeholder='Repita a senha criada acima' classe={errors.passwordC ? 'border-red' : ''}/>
 
                 {errors.passwordC && (<p className='invalidPassword'>{errors.passwordC?.message}</p>)}
 
