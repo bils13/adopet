@@ -1,0 +1,60 @@
+.homepets {
+    position: relative;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -16px; //tirando a diferença do rodapé
+    &__title {
+        width: 226px;
+        height: 40px;
+        text-align: center;
+        margin-top: 100px;
+        @include text(16px, 400, $blue);
+        margin-bottom: 32px;
+    }
+    .pets {
+        z-index: -1;
+        width: 100%;
+        background-color: #F7F7F7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 16px;
+        &__img {
+            width: 148px;
+            height: 148px;
+        }
+        &__info {
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            h1 {
+                @include text(16px, 600, $blue);
+                margin-bottom: 8px;
+            }
+        }
+        &__ficha {
+            p {
+                @include text(14px, 400, $grey);
+            }
+        }
+        &__city {
+            margin-top: 30px;
+            @include text(12px, 400, $grey);
+            margin-bottom: 8px;
+        }
+        &__talk {
+            display: flex;
+            align-items: center;
+            p {
+                margin-left: 8px;
+                @include text(10px, 400, $grey);
+            }
+            img {
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
+}
