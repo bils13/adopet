@@ -1,0 +1,26 @@
+.background_homepets {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../img/forma1.svg');
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 100vw;
+}
+
+@media only screen and (min-width: 768px) {
+    .background_homepets {
+        background-image: url('../img/forma1.svg');
+        background-position: top left -10px;
+        background-size: 530px 434px;
+   }
+}
+
+@media only screen and (min-width: 1440px) {
+    .background_homepets {
+        background-image: url('../img/forma1.svg');
+         background-position: top left -50px;
+         background-size: 530px 434px;
+    }
+ }
+
