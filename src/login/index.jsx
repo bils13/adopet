@@ -17,6 +17,7 @@ export default () => {
 
     const getUser = (data) => {
         type === 'email' ? setEmail(data) : setPassword(data)
+        console.log(data)
     }
 
     const getType = (data) => {
