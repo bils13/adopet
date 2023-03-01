@@ -33,7 +33,7 @@
             @include input(370px);
             @include text(12px, 400, $grey);
         }
-        .invalidPassword {
+        .invalidPassword, .invalidEmail {
             margin-top: -10px;
             margin-bottom: 5px;
             @include text(16px, 600, #ff4444)

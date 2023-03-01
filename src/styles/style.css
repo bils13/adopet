@@ -249,7 +249,7 @@
   font-weight: 400;
   color: #737380;
 }
-.register__label .invalidPassword {
+.register__label .invalidPassword, .register__label .invalidEmail {
   margin-top: -10px;
   margin-bottom: 5px;
   font-family: "Poppins", sans-serif;
