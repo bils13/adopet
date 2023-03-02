@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import logoWhite from '../img/logoAdopetWhite.svg';
 import iconHouse from '../img/Casa.svg';
 import iconMessage from '../img/Mensagens.svg';
+import { AuthContext } from '../contexts/Auth';
+import Button from './Button';
 
-export default ( {icon} ) => {
+export default ( {icon } ) => {
+    const { authenticated } = useContext(AuthContext)
     return (
         <div className='header__icons'>
             <div className='header_homeMessage'>
@@ -12,6 +15,7 @@ export default ( {icon} ) => {
                 <img src={iconMessage} alt='Logo Message'/>
             </div>
             {icon && (<div className='header__iconUser'><img className='header__userIcon' src={icon} alt='Icon User'/></div>)}
+            {authenticated==true && (<Button classe='invalidPassword' text='Logout'/>)}
         </div>
     )
 }

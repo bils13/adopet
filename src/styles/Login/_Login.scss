@@ -31,6 +31,10 @@
         @include text(12px, 400, $pink);
         margin-bottom: 24px;
     }
+    .invalidPassword, .invalidEmail {
+        @include text(16px, 600, #ff4444);
+        text-align: center;
+    }
 }
 
 @media only screen and (min-width: 768px) {

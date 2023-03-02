@@ -14,6 +14,20 @@
     }
 }
 
+.button__logout {
+    background-color: $pink;
+    color: #fff;
+    @include text(16px, 600, #fff);
+    border: none;
+    border-radius: 6px;
+    padding: 8px 6px;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
+    &:hover {
+        background-color: #FF9D9E;
+        cursor: pointer;
+    }
+}
+
 @media only screen and (min-width: 768px) {
     .button {
         width: 344px;
