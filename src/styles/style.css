@@ -13,6 +13,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border: 1px solid green;
 }
 .header__icons .logo {
   display: none;
@@ -398,6 +399,13 @@
   color: #FC7071;
   margin-bottom: 24px;
 }
+.login .invalidPassword, .login .invalidEmail {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ff4444;
+  text-align: center;
+}
 
 @media only screen and (min-width: 768px) {
   .login__logo {
@@ -587,6 +595,23 @@
   filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
 }
 .button:hover {
+  background-color: #FF9D9E;
+  cursor: pointer;
+}
+
+.button__logout {
+  background-color: #FC7071;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 6px;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
+}
+.button__logout:hover {
   background-color: #FF9D9E;
   cursor: pointer;
 }

@@ -9,7 +9,7 @@ import Rodape from '../components/Rodape'
 
 export default () => {
 
-    const { authenticated, login } = useContext(AuthContext)
+    const { authenticated, login, user } = useContext(AuthContext)
 
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
@@ -17,7 +17,6 @@ export default () => {
 
     const getUser = (data) => {
         type === 'email' ? setEmail(data) : setPassword(data)
-        console.log(data)
     }
 
     const getType = (data) => {
@@ -26,7 +25,6 @@ export default () => {
 
     const handleSubmit = e => {
         e.preventDefault()
-        console.log( { email, password })
         login(email, password) //integração com o contexto / api
     }
 
@@ -47,8 +45,9 @@ export default () => {
                             <label>Senha</label>
                             <InputText type='password' placeholder='Insira sua senha' name='senha' value={getUser} getType={getType}/> 
                             <Link link='' classe='login__link' content='Esqueci minha senha'/>
-                            <Button class='button' text='Entrar'/>
+                            <Button classe='button' text='Entrar'/>
                         </form>
+                        {user===false && (<p className='invalidEmail'>Usuário ou senha incorreto</p>)}
                     </section>
                 </section>
             </main>

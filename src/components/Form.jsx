@@ -82,8 +82,8 @@ export default () => {
                 {errors.passwordC && (<p className='invalidPassword'>{errors.passwordC?.message}</p>)}
                 {error==true && (<p className='invalidEmail'>E-mail já cadastrado no sistema.</p>)}
 
-                {stateTwo.matches && (<Button class='register__button' text='Cadastrar!'/>)}
-                {!stateTwo.matches && (<Button class='register__button' text='Cadastrar'/>)}
+                {stateTwo.matches && (<Button classe='register__button' text='Cadastrar!'/>)}
+                {!stateTwo.matches && (<Button classe='register__button' text='Cadastrar'/>)}
 
                 <Rodape />
             </div>

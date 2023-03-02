@@ -6,6 +6,7 @@ import Dunga from '../img/DogDunga.svg'
 import Felicia from '../img/CatFelicia.svg'
 import Sirius from '../img/DogSirius.svg'
 import Rodape from '../components/Rodape'
+import Button from '../components/Button'
 
 export default () => {
     return (

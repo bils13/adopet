@@ -8,19 +8,28 @@ export const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(null)
     
     const login = (email, password) => {
-        console.log('login auth', { email, password })
-        setUser({ id: '123', email })
-        navigate('/homepets')
+        const getUser = localStorage.getItem(`${email}`)
+        if(!!getUser===true) {
+            const getUserObj = JSON.parse(getUser)
+            if(getUserObj.password===password){
+                setUser(email)
+                navigate('/homepets')
+            }
+            else {
+                setUser(false)
+            }
+        } else {
+            setUser(false)
+        }        
     }
 
     const logout = () => {
-        console.log('logout')
         setUser(null)
         navigate('/login')
     }
 
     return (
-        <AuthContext.Provider value={{authenticated: !!user, user, login}}>
+        <AuthContext.Provider value={{authenticated: !!user, user, login, logout}}>
             {children}
         </AuthContext.Provider>)
 }
