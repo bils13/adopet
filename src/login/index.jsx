@@ -34,7 +34,6 @@ export default () => {
                 <Header />
             </header>
             <main>
-                <p>{String(authenticated)}</p>
                 <section className='login'>
                     <img className='login__logo' src={logoBlue} />
                     <p className='login__text'>Já tem conta? Faça seu login: </p>
