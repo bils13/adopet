@@ -14,8 +14,12 @@ export default ( {icon } ) => {
                 <img src={iconHouse} alt='Logo House'/>
                 <img src={iconMessage} alt='Logo Message'/>
             </div>
-            {icon && (<div className='header__iconUser'><img className='header__userIcon' src={icon} alt='Icon User'/></div>)}
-            {authenticated==true && (<Button classe='invalidPassword' text='Logout'/>)}
+            {icon && 
+                (<div className='header__iconUser'>
+                    <img className='header__userIcon' src={icon} alt='Icon User'/>
+                    {authenticated==true && (<Button classe='button__logout' text='Logout'/>)}
+                </div>)}
+             
         </div>
     )
 }
