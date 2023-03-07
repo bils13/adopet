@@ -29,7 +29,7 @@ export default () => {
     }
 
     return (
-        <div className='background_register'>
+        <div className='background_login'>
             <header>
                 <Header />
             </header>
@@ -50,7 +50,7 @@ export default () => {
                     </section>
                 </section>
             </main>
-            <Rodape />
+            <Rodape classe='login__footer'/>
         </div>
     )
 }

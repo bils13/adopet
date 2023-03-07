@@ -1,8 +1,8 @@
 import React from 'react'
 
-export default () => {
+export default ({ classe }) => {
     return (
-        <div className='footer'>
+        <div className={classe}>
             <p>2023 - Desenvolvido por Gabriel Souza</p>
         </div>
     )

@@ -16,15 +16,15 @@ export default () => {
                     <img src={logoWhite} />
                     <h1>Boas-vindas!</h1>
                     <p>Que tal mudar sua vida adotando seu novo melhor amigo? Vem com a gente!</p>
-                    <Button classe='button' text='Já tenho conta'/>
-                    <Button classe='button' text='Quero me cadastrar'/>
+                    <Button classe='button' text='Já tenho conta' click={'login'}/>
+                    <Button classe='button' text='Quero me cadastrar' click={'register'}/>
                 </section>
             </main>
             <div className='ilustration'>
                 <img src={Ilustration} />
             </div>
             <footer>
-                <Rodape />
+                <Rodape classe='footer'/>
             </footer>
         </div>
     )

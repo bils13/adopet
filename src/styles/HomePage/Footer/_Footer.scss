@@ -1,23 +1,13 @@
 .footer {
+    position: absolute;
+    bottom: 0;
     background-color: $green;
     width: 100vw;
-    height: 104px;
+    padding: 40px 0;
     display: flex;
     justify-content: center;
     align-items: center;
     p {
         @include text(16px, 400, #fff)
-    }
-}
-
-@media only screen and (min-width: 1280px) {
-    .footer {
-        height: 50px;
-    }
-}
-
-@media only screen and (max-height: 740px) { //config especial para telas pequenas
-    .footer {
-        height: 40px;
     }
 }

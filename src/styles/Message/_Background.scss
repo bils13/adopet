@@ -1,4 +1,4 @@
-.background_homepets {
+.background_message {
     position: absolute;
     width: 100%;
     height: 100vh;
@@ -9,18 +9,18 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .background_homepets {
-        background-image: url('../img/forma1.svg');
-        background-position: top left -20px;
-        background-size: 550px;
+    .background_message {
+        background-image: url('../img/forma1.svg'), url('../img/Forma2.svg');
+        background-position: top left -20px, center right -10px;
+        background-size: 550px, 134px 600px;
    }
 }
 
 @media only screen and (min-width: 1440px) {
-    .background_homepets {
+    .background_message {
         background-image: url('../img/forma1.svg'), url('../img/Forma2.svg');
-         background-position: top left -20px, center right -10px;
-         background-size: 550px, 134px 600px;
+        background-position: top left -20px, center right -20px;
+        background-size: 550px, 134px 600px;
     }
  }
 

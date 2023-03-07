@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../components/Header'
 import Form from '../components/Form'
+import Rodape from '../components/Rodape'
 import logoBlue from '../img/logoAdopet.svg'
 
 export default () => {
@@ -19,6 +20,7 @@ export default () => {
                     </div>
                 </section>
             </main>
+            <Rodape classe='register__footer'/>
         </div>
     )
 }
