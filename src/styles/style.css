@@ -73,7 +73,7 @@
 }
 @media only screen and (min-width: 1440px) {
   .background_home {
-    background-position: top left -50px, top 40px right;
+    background-position: top left -10px, top 40px right;
     background-size: 530px 434px, 134px 664px;
   }
 }
@@ -184,7 +184,6 @@
     width: 338px;
     height: 300px;
     left: 38%;
-    bottom: 30px;
   }
 }
 @media only screen and (max-height: 850px) {
