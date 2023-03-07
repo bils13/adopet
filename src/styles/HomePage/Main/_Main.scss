@@ -73,14 +73,13 @@
     }
 }
 
-@media only screen and (max-height: 740px) {
+@media only screen and (max-height: 850px) {
     .main {
         margin-top: 50px;
     }
     .ilustration {
         img {
-            height: 200px;
-            bottom: 20px;
+            height: 25vh;
         }
     }
 }

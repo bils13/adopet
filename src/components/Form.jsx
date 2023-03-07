@@ -1,6 +1,5 @@
 import InputText from '../components/InputText'
 import Button from '../components/Button'
-import Rodape from '../components/Rodape'
 import { useEffect, useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup';
@@ -84,8 +83,6 @@ export default () => {
 
                 {stateTwo.matches && (<Button classe='register__button' text='Cadastrar!'/>)}
                 {!stateTwo.matches && (<Button classe='register__button' text='Cadastrar'/>)}
-
-                <Rodape />
             </div>
         </form>
     )

@@ -101,7 +101,7 @@ export default () => {
                     </div>
                 </section>
             </main>
-            <Rodape />
+            <Rodape classe='homepets__footer'/>
         </div>
     )
 }
